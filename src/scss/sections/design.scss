@@ -1,0 +1,126 @@
+.design {
+    background-color: #202020;
+}
+
+.design__wrapper {
+    padding-inline: 0;
+    padding-top: 82px;
+    padding-bottom: 138px;
+}
+
+.wrapper-title {
+    padding-bottom: 28px;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 43.2px;
+    text-align: left;
+    color: #fff;
+
+    @media (min-width:$breakpoint-tablet) {
+        padding-bottom: 38px;
+        font-size: 80px;
+        line-height: 96px;   
+    }
+}
+
+.wrapper-cards {
+    display: grid;
+    grid-template-areas: 'news'
+                         'pariram'
+                         'droom';
+    gap: 26px;
+
+    @media (min-width:$breakpoint-tablet) {
+        grid-template-areas: 'news news'
+                             'pariram droom';
+    }
+}
+
+.wrapper-card {
+    position: relative;
+}
+
+.wrapper-card img{
+    width: 343px;
+    height: 325px;
+}
+
+.wrapper-card:nth-child(1){
+    grid-area: news;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 77px;
+        right: 85px;
+        background-image: url(../images/star.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 172px;
+        height: 165px;
+
+        @media (min-width:$breakpoint-tablet) {
+            top: 125px;
+            right: 265px;
+        }
+        @media (min-width:$breakpoint-desktop) {
+            top: 133px;
+            right: 437px;
+        }
+    }
+}
+
+.wrapper-card:nth-child(2){
+    grid-area: pariram;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 77px;
+        right: 85px;
+        bottom: 76px;
+        left: 86px;
+        background-image: url(../images/butterfly.svg);
+        background-size: contain;
+        width: 172px;
+        height: 165px;
+    }
+}
+
+.wrapper-card:nth-child(3){
+    grid-area: droom;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 77px;
+        right: 85px;
+        bottom: 76px;
+        left: 86px;
+        background-image: url(../images/asterisk.svg);
+        background-size: contain;
+        width: 172px;
+        height: 165px;
+    }
+}
+
+@media (min-width:$breakpoint-tablet) {
+    .wrapper-card:nth-child(1) img{
+        width: 704px;
+        height: 414px;
+    }
+    .wrapper-card:nth-child(2) img,
+    .wrapper-card:nth-child(3) img{
+        width: 335px;
+        height: 325px;
+    }
+}
+
+@media (min-width:$breakpoint-desktop) {
+    .wrapper-card:nth-child(1) img{
+        width: 1050px;
+        height: 414px;
+    }
+    .wrapper-card:nth-child(2) img,
+    .wrapper-card:nth-child(3) img{
+        width: 514px;
+        height: 414px;
+    }
+}

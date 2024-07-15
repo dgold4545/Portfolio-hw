@@ -1,0 +1,24 @@
+.designText {
+    background-image: url(../images/designText__bg.png);
+    background-size: cover;
+}
+
+.designText__title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+    text-align: center;
+    color: #fff;
+    padding-block: 180px;
+
+    @media (min-width:$breakpoint-tablet) {
+        font-size: 48px;
+        line-height: 57.6px;
+        padding-block: 275px;
+    }
+    @media (min-width:$breakpoint-desktop) {
+        font-size: 48px;
+        line-height: 57.6px;
+        padding-block: 300px;
+    }
+}

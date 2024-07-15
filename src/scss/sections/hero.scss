@@ -1,0 +1,15 @@
+.hero__title {
+    font-family: DynaPuff;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 57.6px;
+    text-align: left;
+    color: #fff;
+    padding-top: 412px;
+
+    @media (min-width:$breakpoint-tablet) {
+        font-size: 80px;
+        line-height: 96px;
+        padding-top: 273px;
+    }
+}

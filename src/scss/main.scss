@@ -1,0 +1,26 @@
+@import './helpers/index.scss';
+
+body {
+    font-family: 'DynaPuff', sans-serif;
+}
+
+.container {
+    max-width: 343px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0 1em;
+
+    @media (min-width:$breakpoint-tablet) {
+        max-width: 703px;
+    }
+    @media (min-width:$breakpoint-desktop) {
+        max-width: 1050px;
+    }
+}
+
+.hero__bgi {
+    background: linear-gradient(252.94deg, #FFEE32 -13.48%, #D6D6D6 125.48%);
+    height: 100vh;
+}
+
+@import './sections/index.scss';

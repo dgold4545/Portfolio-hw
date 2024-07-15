@@ -1,0 +1,108 @@
+.biography {
+    background-color: #202020;
+    position: relative;
+    overflow: hidden;
+}
+
+.biography__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-top: 72px;
+    padding-bottom: 76px;
+
+    @media (min-width:$breakpoint-tablet) {
+        padding-block: 101px;
+        padding-right: 163px;
+    }
+    @media (min-width:$breakpoint-desktop) {
+        padding-right: 500px;
+    }
+}
+
+.biography__wrapper-title {
+    font-family: DynaPuff;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 43.2px;
+    text-align: left;
+    color: #FAEB49;
+    
+
+    @media (min-width:$breakpoint-tablet) {
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 57.6px;
+    }
+}
+
+.biography__wrapper-desc {
+    font-family: Manrope;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20.49px;
+    text-align: left;
+    color: #fff;
+
+    @media (min-width:$breakpoint-tablet) {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 21.86px;
+    }
+}
+
+.biography__wrapper-list {
+    display: flex;
+
+    &--number {
+        font-family: DynaPuff;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 43.2px;
+        color: #fff;
+
+        @media (min-width:$breakpoint-tablet) {
+            font-size: 48px;
+            line-height: 57.6px;
+        }
+    }
+
+    &--text {
+        font-family: Manrope;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 21.86px;
+        color: #fff;
+    }
+
+    @media (min-width:$breakpoint-tablet) {
+        gap: 96px;
+    }
+}
+
+.biography__bg-img {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    @media (min-width:$breakpoint-tablet) {
+        display: inline;;
+        transform: translate(37%, -8%);
+    }
+    @media (min-width:$breakpoint-desktop) {
+        transform: translate(0, -8%);
+    }
+}
+
+.biography__bg-img--mob {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(9%, 18%);
+
+    @media (min-width:$breakpoint-tablet) {
+        display: none;
+    }
+}
+

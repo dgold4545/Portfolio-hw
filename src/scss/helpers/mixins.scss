@@ -1,0 +1,11 @@
+@mixin flexbox($horizontal, $vertical: center, $wrap: nowrap) {
+    display: flex;
+    justify-content: $horizontal;
+    align-items: $vertical;
+    flex-wrap: $wrap;
+}
+
+@mixin grid($column, $columnSize: 1fr) {
+    display: grid;
+    grid-template-columns: repeat($column, $columnSize);
+}
